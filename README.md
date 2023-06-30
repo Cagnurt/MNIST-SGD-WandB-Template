@@ -23,7 +23,7 @@ class Config:
         self.train_dataloader= None
         self.test_dataloader = None
         self.log_freq = 10
-        self.sweep = {  "name" : "mmi712-assignment1",
+        self.sweep = {  "name" : "wandb-tutorial",
                         "method" : "grid",
                         "parameters" : {
                             "learning_rate" : {
@@ -40,7 +40,7 @@ class Config:
         
 
 def grid_search(config):
-    sweep_id = wandb.sweep(config.sweep, entity = "cagnur", project="mmi712-assignment1")
+    sweep_id = wandb.sweep(config.sweep, entity = "cagnur", project="wandb-tutorial")
     
     def train_for_five_epochs():
         wandb.init()
@@ -148,7 +148,7 @@ I have two sweep results. Following corresponds to the fresh one. We can visuali
 
  
 
-![wandb.png](MNIST-SGD-WandB-Template%206175a973f80f4f20a4240e558b6bee2f/wandb.png)
+![img/wandb.png](MNIST-SGD-WandB-Template%206175a973f80f4f20a4240e558b6bee2f/wandb.png)
 
 Although this sweeping result states that the higher accuracy is obtained with:
 
