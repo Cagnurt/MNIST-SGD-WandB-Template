@@ -148,7 +148,7 @@ I have two sweep results. Following corresponds to the fresh one. We can visuali
 
  
 
-![img/wandb.png](MNIST-SGD-WandB-Template%206175a973f80f4f20a4240e558b6bee2f/wandb.png)
+![wandb.png](img/wandb.png)
 
 Although this sweeping result states that the higher accuracy is obtained with:
 
